@@ -20,9 +20,3 @@ class Mlp(nn.Module):
     def forward(self, x):
         return self.network(x)
 
-mlp = Mlp()
-x = t.randn(5, 28*28)
-y = mlp.forward(x)
-
-print(y[0].exp())
-print(y[0].exp().sum())
